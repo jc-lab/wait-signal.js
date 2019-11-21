@@ -78,4 +78,7 @@ class WaitSignal {
     }
 }
 exports.default = WaitSignal;
+if (module) {
+    module.exports = WaitSignal;
+}
 //# sourceMappingURL=index.js.map
