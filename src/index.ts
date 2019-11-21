@@ -88,3 +88,7 @@ export default class WaitSignal<T = void> {
         }
     }
 }
+
+if(module) {
+    module.exports = WaitSignal;
+}

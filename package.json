@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/jc-lab/wait-signal.js#readme",
   "devDependencies": {
+    "@types/node": "^12.12.11",
     "typescript": "^3.7.2"
   }
 }
