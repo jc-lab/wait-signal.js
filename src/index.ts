@@ -27,7 +27,7 @@ export default class WaitSignal<T = void> {
         setBySym(this, C_LISTENERS, [] as IListener[]);
     }
 
-    wait(callback?: (result: T | undefined, err: any | null) => void): void;
+    wait(callback: (result: T | undefined, err: any | null) => void): void;
     wait(): Promise<T>;
 
     wait(callback?: (result: T | undefined, err: any | null) => void): any {
@@ -89,6 +89,6 @@ export default class WaitSignal<T = void> {
     }
 }
 
-if(module) {
+if(typeof module !== 'undefined') {
     module.exports = WaitSignal;
 }
