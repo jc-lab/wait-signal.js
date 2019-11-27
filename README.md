@@ -2,7 +2,7 @@
 
 ### JAVASCRIPT
 ```javascript
-const WaitEvent = require('wait-event');
+const WaitEvent = require('wait-signal');
 
 const ready1 = new WaitEvent();
 const ready2 = new WaitEvent();
@@ -51,7 +51,7 @@ ready2.throw(new Error('Test Throw Message'));
 
 ### TYPESCRIPT
 ```typescript
-import WaitEvent from 'wait-event'
+import WaitEvent from 'wait-signal'
 
 const ready1 = new WaitEvent<string>();
 const ready2 = new WaitEvent<string>();
