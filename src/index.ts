@@ -21,7 +21,7 @@ interface IListener {
     reject: any;
 }
 
-class WaitSignal<T = void> {
+export class WaitSignal<T = void> {
   public static default(): typeof WaitSignal {
     return WaitSignal;
   }
@@ -93,5 +93,4 @@ class WaitSignal<T = void> {
   }
 }
 
-export = WaitSignal;
-
+export default WaitSignal;
