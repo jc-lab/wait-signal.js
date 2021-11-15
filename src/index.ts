@@ -21,7 +21,11 @@ interface IListener {
     reject: any;
 }
 
-export default class WaitSignal<T = void> {
+class WaitSignal<T = void> {
+    public static default(): typeof WaitSignal {
+        return WaitSignal;
+    }
+    
     constructor() {
         setBySym(this, C_STATE, State.WAIT);
         setBySym(this, C_LISTENERS, [] as IListener[]);
@@ -89,6 +93,5 @@ export default class WaitSignal<T = void> {
     }
 }
 
-if(typeof module !== 'undefined') {
-    module.exports = WaitSignal;
-}
+export = WaitSignal;
+
